@@ -1,0 +1,29 @@
+study:
+  name: 'Binary-Classification'
+
+data:
+  path: ''
+  predict: 'label'
+  patch_size: 224
+  num_outputs: 1
+  thresholds: [0.5]
+
+solver:
+  learning_rate: 0.0005
+  weight_decay: .0001
+  epochs: 500
+
+  batch_size: 32
+  num_workers: 16
+  
+  criterion: 'CE'
+  # criterion_weights: [0.3333333]
+  # criterion_weights: [1.357, 8.8, 30.3]
+  # criterion_weights: [1.155567515, 7.496359146, 49.08697275]
+
+model:
+  category: 'vanilla'
+
+inference:
+  threshold: -2
+
