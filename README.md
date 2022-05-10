@@ -31,6 +31,15 @@ Unlike Task 1, for this task, we optimized the workflow, so threshold need to be
 Finally, to test the performance on test set, run '03.Task3_4_Classes_Staging/staging/04.test_test.sh'. Case-wise predictions could be found in '03.Task3_4_Classes_Staging/staging/results/prediction_test.xlsx', and the performance (accuracy) could be found in '03.Task3_4_Classes_Staging/staging/results/Performance_test_set.xlsx'.
 
 
+## Image Segmentation task - in the Jupyter notebook file
+
+This notebook is a full pipeline from loading the data to training. Unfortunately, you will need access to our Google Drive folder where the data is located. Please contact ariel@cs.jhu.edu. 
+
+The Notebook has a simple Single image part, which is not very relevant, a K-Means algorithm to generate labels, and the nn-Unet implementation
+
+The model has already been trained. If you'd like to re-train it, please make a copy of the notebook and change the file storage location not to override existing files. TRAINING TAKES HOURS! The code is commented out for this reason. Code for doing inference is also provided. Please note that nn-Unet wants a very particular folder structure and input formats - a lot of effort has been spent setting up the directories. Please contact Ariel if you have any questions
+
+
 
 
 
